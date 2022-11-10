@@ -1,0 +1,29 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.body {
+    display: flex;
+    flex: auto;
+}
+
+.row {
+    display: flex;
+    flex: 1 1 1;
+    flex-direction: row;
+    height: auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    flex: 2 0 2;
+    height: 80px;
+    width: 80px;
+    padding: 16px;
+    margin: 2px;
+    border: 2px solid red;
+}
