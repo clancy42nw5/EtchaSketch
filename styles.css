@@ -6,24 +6,41 @@
 .body {
     display: flex;
     flex: auto;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+#newGrid {
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
 }
 
 .row {
     display: flex;
-    flex: 1 1 1;
+    flex: 1 0 1;
     flex-direction: row;
     height: auto;
+    border: 1px solid red;
 }
 
 .column {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    flex: 2 0 2;
-    height: 80px;
-    width: 80px;
+    transition: all 0.2s;
+    flex: 1 1 auto;
+    height: 5px;
+    width: 5px;
     padding: 16px;
-    margin: 2px;
-    border: 2px solid red;
+    margin: 1px;
+    border: 1px solid red;
+}
+
+.activated {
+    background-color: rgb(186, 182, 182);
+}
+
+.permanent {
+    background-color: black;
 }
